@@ -9,6 +9,7 @@ main {
 
 .card {
     display: grid;
+    background-color: aqua;
 }
 
 section {
