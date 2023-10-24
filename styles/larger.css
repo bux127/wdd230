@@ -1,5 +1,6 @@
 nav {
     display: flex;
+    color: aqua;
 }
 
 main {
@@ -9,7 +10,7 @@ main {
 
 .card {
     display: grid;
-    background-color: aqua;
+
 }
 
 section {
