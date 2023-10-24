@@ -1,0 +1,31 @@
+nav {
+    display: flex;
+}
+
+main {
+    max-width: 200px;
+    justify-content: center;
+}
+
+.card {
+    display: grid;
+}
+
+section {
+    display: flex;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+@media (min-width: 750px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+}
