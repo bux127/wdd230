@@ -77,6 +77,7 @@ nav, a:hover {
 
 footer, p, ul {
     display: flex;
+    justify-content: center;
 }
 
 footer, p, ul, li {
@@ -84,21 +85,18 @@ footer, p, ul, li {
     gap: 10px;
 }
 
-ul {
-    display: flex;
+.ul {
     flex-direction: column;
-    
 }
 
-
 footer{
-    background: linear-gradient(to left, yellowgreen, #944bbb) ;
+    background: linear-gradient(to left, yellowgreen, #944bbb);
     font-family: 'Kalam', 'Lora', Calibri;
     margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    
     color: #001d4a;
 
 }
