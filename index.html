@@ -4,24 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Innocent Makhanya - WDD 230 - Web Frontend Development</title>
-    <meta name="description" content="wdd230">
+    <meta name="description" content="WDD 230-Web Frontend Development for Banele Makhanya - course assignment portal">
     <meta name="author" content="Innocent Makhanya">
-    <link rel="stylesheet" href="larger.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
 </head>
 <body>
 <header>
-    <img>
-    <h1></h1>
+    <img src="images/icebreaker.jpg">
+    <h1>Banele Innocent Makhanya</h1>
     <img>
 </header>
 <nav>
-    <a>Home</a>
-    <a>Chamber</a>
-    <a>Site Plan</a>
-    <a>Form</a>
+    
+    <a href="#">Home</a>
+    <a href="#">Chamber</a>
+    <a href="#">Site Plan</a>
+    <a href="#">Form</a>
 </nav>
 <main>
-    <h2>WDD 230</h2>
+    <h2>WDD 230: Web Frontend Development</h2>
+    <div class="div">
     <section class="card">
         <h3>Learning Activities</h3>
         <ul>
@@ -32,15 +36,21 @@
     </section>
     <section class="card">
         <h3>Information</h3>
+        <p id="name"></p>
     </section> 
-
+    </div>
 </main>
 <footer>
-    <p>&copy 2023</p>
-    <p id="lastModified"></p>
+    <p>
+        <ul>
+            <li>&copy <span class ="year"></span></li>
+            <li>Banele Makhanya</li>
+            <li>Swaziland</li>
+
+        </ul>
+    </p>
+    <p >Last Modification: <span id="lastModified"></span> </p>
 </footer>
-<script>
-//document.getElementsById("lasModified")
-</script>
+<script src="scripts/getDates.js"></script>
 </body>
 </html>

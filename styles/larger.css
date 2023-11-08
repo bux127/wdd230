@@ -1,34 +1,33 @@
-nav {
-    display: flex;
-    color: aqua;
-    justify-content: center;
-}
 
-main {
-    max-width: 200px;
-    justify-content: center;
-}
 
-.card {
-    display: grid;
 
-}
-
-section {
-    display: flex;
-}
-
-ul li a {
-    text-decoration: none;
-}
-
-@media (min-width: 250px) {
-    nav{
+@media (max-width: 900px) {
+    nav {
         display: flex;
-        flex-direction: column;
+        flex-direction: column;    
     }
-    section {
+    nav, a {
+       align-items: center;
+    }
+    footer, p, ul, li {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div {
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+@media (min-width: 900px ) {
+    nav {
         display: flex;
-        flex-direction: column;
     }
+
+    
+    .div {
+        grid-template-columns: 2fr 1fr;
+    }      
+
 }

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Raleway:ital,wght@1,600&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Lora&family=Raleway:ital,wght@1,600&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Lora&family=Raleway:ital,wght@1,600&family=Russo+One&family=Special+Elite&display=swap');
+header {
+    background: linear-gradient(to left, yellowgreen, white) ;
+    display: flex;
+    justify-content: center;
+}
+
+header, h1 {
+    font-family: 'Lora', 'Kalam', Calibri;
+}
+nav {
+    background: linear-gradient(to right, #6e9887, white) ;
+    justify-content: space-around;
+}
+
+h1, h2, h3 {
+    font-family: 'Special Elite';
+    color: #001d4a;
+}
+.div, h2 {
+    margin-left: 10px;
+    margin-right: 10px;
+        
+}
+
+h2 {
+    border-bottom: 1px solid black;
+   
+}
+
+h3 {
+    margin-top: 10px;
+    height: 40px;
+    align-items: center;
+    
+
+}
+
+
+.div {
+    display: grid;
+    gap: 10px;
+    
+    }
+
+section {
+    border: 1px solid black;
+    border-radius: 5px;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto-fill;
+    }
+    
+.card {
+    display: grid;
+    gap: 10px;
+    border: 1px solid black;
+    justify-content: center;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+    align-self: center;
+    filter: drop-shadow(5px 5px 10px #555);
+    border-radius: 3px;
+    transform: translateX(-10%);
+}
+nav, a {
+    color: #001d4a;
+    text-decoration: none;
+    font-family: 'Kalam', 'Lora', Calibri;
+}
+
+nav, a:hover {
+    background-color: yellowgreen;
+}
+
+footer, p, ul {
+    display: flex;
+}
+
+footer, p, ul, li {
+    list-style-type: none;
+    gap: 10px;
+}
+
+
+footer{
+    background: linear-gradient(to left, yellowgreen, #944bbb) ;
+    font-family: 'Kalam', 'Lora', Calibri;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #001d4a;
+
+}
