@@ -34,7 +34,7 @@ h3 {
     margin-top: 10px;
     height: 40px;
     align-items: center;
-    
+   
 
 }
 
@@ -48,10 +48,7 @@ h3 {
 section {
     border: 1px solid black;
     border-radius: 5px;
-    position: relative;
-    display: grid;
-    grid-template-columns: auto-fill;
-    }
+     }
     
 .card {
     display: grid;
@@ -85,6 +82,12 @@ footer, p, ul {
 footer, p, ul, li {
     list-style-type: none;
     gap: 10px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    
 }
 
 
