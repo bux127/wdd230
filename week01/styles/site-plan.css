@@ -1,0 +1,18 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital@1&family=Teko&display=swap');
+
+a {
+    font-family: 'Teko';
+}
+
+p, li{
+    font-family: 'Marck Script';
+    font-size: 25px;
+}
+
+h2 {
+    font-family: 'Chakra Petch';
+    color: blue;
+}
