@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital@1&family=Teko&display=swap');
 
 a {
-    font-family: 'Teko';
+    font-family: 'Chakra Petch';
 }
 
 p, li{
@@ -13,6 +13,6 @@ p, li{
 }
 
 h2 {
-    font-family: 'Chakra Petch';
-    color: blue;
+    font-family: 'Teko';
+
 }
