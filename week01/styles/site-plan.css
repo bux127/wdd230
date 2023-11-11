@@ -5,6 +5,7 @@
 
 a {
     font-family: 'Chakra Petch';
+    color: #D62828;
 }
 
 p, li{
@@ -12,7 +13,17 @@ p, li{
     font-size: 25px;
 }
 
-h2 {
+h1, h2 {
     font-family: 'Teko';
+    color: #003049;
 
 }
+
+body {
+    background: #EAE2B7;
+}
+
+li {
+    color: #D62828;
+}
+
