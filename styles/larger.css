@@ -15,9 +15,6 @@
         align-items: center;
     }
 
-    .div {
-        grid-template-columns: 1fr;
-    }
     .menu {
         display: block;
         font-size: 2rem;
@@ -57,7 +54,7 @@
             display: flex;
         }
     nav a {
-        display: block; /* change state in small view */
+        display: block; 
         flex: 1 1 100%;
         text-align: center;
         }

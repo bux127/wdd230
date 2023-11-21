@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr 3fr;
+    background: yellowgreen;
+    grid-auto-flow: column;
+  
+}
+ 
+header img {
+    top: 10px;
+}
+h1 {
+    font-family: 'Orbitron';
+}
+
+span {
+    font-family: 'Orbitron';
+    font-weight: 100;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    align-self: center;
+ 
+}
+
+
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    list-style: none;
+    
+}
+
+main {
+    background: #003049;
+    background-image: url(../images/background.webp);
+    padding-top: 500px;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 5px;
+    
+    
+}
+
+.section h3 {
+    justify-items: center;
+}
+
+.adverts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin-top: 5px;
+    
+}
+
+.end {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.end::before {
+    content: '';
+    background-image: url(../images/shopping-bag_1991590.png);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 1;
+    
+}
+
+
+.adverts section {
+    background-color:  rgba(234, 226, 183, .5);;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    box-shadow: 3px 3px 3px gold;
+    font-family: 'Yatra One';
+    color: #003049;
+}
+
+
+
+
+.section section {
+    background-color: rgba(234, 226, 183, .5);
+    border: 1px solid grey;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px gold;
+    font-family: 'Yatra One';
+    color: #003049;
+}
+    
+
+
+
+.join {
+   margin-left: 50%;  
+   background-color:#003049;
+   border-radius: 3px;
+   font-size: 30px;
+   color: white;
+   padding: 5px;
+   font-family: 'Architects Daughter';
+}
+
+.img {
+    justify-self: auto;
+    transform: translateX(10px);
+}
+
+section h3 h4 {
+    border-bottom: 1px solid #001d4a;
+    text-align: center;
+}
+
+
+
+nav {
+    display: flex;
+    background: aqua;
+    justify-content: center;
+    justify-content: space-evenly;
+
+    
+}
+
+nav a {
+    
+    text-decoration: none;
+    font-family: 'Yatra One';
+    
+}
+
+footer{
+    background: yellowgreen;
+    font-family: 'Architects Daughter';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #001d4a;
+    font-size: 20px;
+}
+
+footer, p, ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer, p, ul, li {
+    list-style-type: none;
+    gap: 10px;
+    
+}
+
+.end p {
+    text-align: center;
+}
