@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Raleway:ital,wght@1,600&family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalam&family=Lora&family=Raleway:ital,wght@1,600&family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalam&family=Lora&family=Raleway:ital,wght@1,600&family=Russo+One&family=Special+Elite&display=swap');
+
+
 header {
     background: linear-gradient(to left, yellowgreen, white) ;
     display: flex;
@@ -11,7 +13,7 @@ header, h1 {
     font-family: 'Lora', 'Kalam', Calibri;
 }
 nav {
-    background: linear-gradient(to right, #6e9887, white) ;
+    background: linear-gradient(to right, #eae2b7, #f77f00, white) ;
     justify-content: space-around;
 }
 
@@ -37,6 +39,7 @@ h3 {
    
 
 }
+
 
 
 .div {
@@ -99,4 +102,12 @@ footer{
     
     color: #001d4a;
 
+}
+
+#mode {
+    transform: translatex(-20px);
+}
+
+#mode:hover {
+    cursor: pointer;
 }

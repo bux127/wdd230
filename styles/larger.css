@@ -8,6 +8,7 @@
     }
     nav, a {
        align-items: center;
+       flex: 1 1 100%;
     }
     footer, p, ul, li {
         flex-direction: column;
@@ -17,17 +18,50 @@
     .div {
         grid-template-columns: 1fr;
     }
+    .menu {
+        display: block;
+        font-size: 2rem;
+        font-weight:700;
+        text-decoration: none;
+        padding: .5rem .75rem;
+        background-color: #eee;
+        color: #000;
+    }
+    
+    .menu::before {
+        content: "≡";
+    }
+    
+    .show a {
+        display: block;
+    }
+    
+    .menu.show::before {
+        content: "X";
+    }
+    
+   nav a {
+    display: none;
+   }
     
 }
 
 @media (min-width: 900px ) {
-    nav {
-        display: flex;
-    }
-
     
     .div {
         grid-template-columns: 2fr 1fr;
     }      
 
+
+    nav {
+            display: flex;
+        }
+    nav a {
+        display: block; /* change state in small view */
+        flex: 1 1 100%;
+        text-align: center;
+        }
+    .menu {
+        display: none;
+        }
 }
