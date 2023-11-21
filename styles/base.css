@@ -4,7 +4,7 @@
 
 
 header {
-    background: linear-gradient(to left, yellowgreen, white) ;
+    background: #D62828;
     display: flex;
     justify-content: center;
 }
