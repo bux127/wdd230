@@ -40,7 +40,9 @@ h3 {
 
 }
 
-
+.menu {
+    background: linear-gradient(to right, #eae2b7, #f77f00, white) ;
+}
 
 .div {
     display: grid;
