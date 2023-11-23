@@ -118,8 +118,9 @@ main {
    border-radius: 3px;
    font-size: 30px;
    color: white;
-   padding: 5px;
+   padding: 3px;
    font-family: 'Architects Daughter';
+   margin-bottom: 10px;
 }
 
 .img {
