@@ -14,6 +14,8 @@ body {
 
 h1 {
 	font-size: 1.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: blue;
 }
 
 main {
