@@ -2,6 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam&family=Lora&family=Raleway:ital,wght@1,600&family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalam&family=Lora&family=Raleway:ital,wght@1,600&family=Russo+One&family=Special+Elite&display=swap');
 
+body {
+	height: 100vh;
+	
+	place-items: center;
+	justify-content: center;
+	font-family: Roboto, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
 
 header {
     background: #D62828;
@@ -113,3 +123,43 @@ footer{
 #mode:hover {
     cursor: pointer;
 }
+
+
+
+.hero {
+	margin: auto;
+	position: relative;
+	border: 1px solid rgba(0,0,0,.1);
+	height: 300px;
+}
+
+.hero img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.herolabel {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	background: radial-gradient(#fff, #f77f00);
+	border: 1px solid #944bbb;
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+    border-radius: 4px;
+}
+
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 2rem;
+	font-family:'Special Elite';
+}
+
+iframe {
+    margin: auto;
+}
+
