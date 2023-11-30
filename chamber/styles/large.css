@@ -17,6 +17,11 @@
     header {
         display: flex;
         flex-direction: column;
+      
+    }
+
+    header p {
+        text-align: center;
     }
 
     .section {
@@ -69,6 +74,10 @@
    .sidebar {
     justify-content: center;
     text-align: center;
+   }
+
+   .join {
+    top: 700px;
    }
 }
 
