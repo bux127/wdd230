@@ -7,8 +7,8 @@
     <meta name="description" content="WDD 230-Web Frontend Development for Banele Makhanya - course assignment portal">
     <meta name="author" content="Innocent Makhanya">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    <link rel="icon" href="images/favicon (1).ico">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="images/favicon.ico">
     <meta property="og.title" content="Web Frontend Developmnent"/>
     <meta property="og.type" content="Website on Front end development"/>
     <meta property="og.image" content="https://www.google.com/imgres?imgurl=https%3A%2F%2Fblog.l2b.co.za%2Fwp-content%2Fuploads%2F2023%2F07%2F272fdb8e-ccd4-4ff0-bf4b-c8dc374a1915.jpeg&tbnid=l0fwPdKHmA4s8M&vet=12ahUKEwjI-6DDgsiCAxWOXaQEHZAnD1YQMygregUIARCsAQ..i&imgrefurl=https%3A%2F%2Fblog.l2b.co.za%2Ffeatured-project-fnb-head-office-ezulwini%2F&docid=vltEi3o6fWv8gM&w=2048&h=1152&itg=1&q=ezulwini%20eswatini&ved=2ahUKEwjI-6DDgsiCAxWOXaQEHZAnD1YQMygregUIARCsAQ"/>
@@ -18,7 +18,7 @@
 <body>
 <header>
     <div id="mode">🕶️</div>
-    <img class="profile" src="prof.webp" alt="profile image">
+    <img src="../prof.webp" alt="profile">
     <h1>Banele Innocent Makhanya</h1>
     <img>
 </header>
@@ -32,36 +32,24 @@
     <a href="week01/chamber-site-plan.html">Site Plan</a>
     <a href="#">Form</a>
 </nav>
-<main>
-    <div class="hero">
-        <picture >
-            <source media="(min-width: 400px)" src="week 3/images/hero-small.webp">
-            <source media="(min-width: 960px)" src="week 3/images/hero-medium.webp">
-            <img src="week 3/images/hero-large.webp" alt="church" width="1500px" height="750px">
-        </picture>
-        <div class="herolabel">
-			<p>Quito Ecuador Temple</p>
-		</div>
-    </div>
+<main class="response">
+    <!-- The sidebar -->
+<div class="sidebar">
     
-    <h2>WDD 230: Web Frontend Development</h2>
-    <div class="div">
-    <section class="card">
-        <h3>Learning Activities</h3>
-        <ul class="ul">
-            <li>Week 01:<a href="index.html"> Layout </a>|<a href="week01/media-query.html"> Media Query </a>|<a href="#"> Js Pen</a></li>
-            <li>Week 02:<a href="week2/design.html"> Design Principles </a>|<a href="https://codepen.io/Banele-Makhanya/pen/eYxejzx"> Responsive "Harmburger" Menu </a>|<a href="week2/bom.html"> DOM Manipulation</a> </li>
-            <li>Week 03:<a href="week 3/images/landscape.webp"> WebP </a>|<a href="week 3/lazyload.html"> Lazy Loading </a>|<a href="week 3/responsive-images.html"> Responsive Images </a>|<a href="week 3/bom.html"> Web Storage API</a></li>
-            <li>Week 04:</li>
-            <li>Week 05:</li>
-            <li>Week 06:</li>
-        </ul>
-    </section>
-    <section class="card">
-        <h3>Information</h3>
-        <p id="name"></p>
-        <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
-    </section> 
+    <a class="active" href="#">Number of Visits: </span><span class="visits"></span></a>
+    <a href="http://www.times.co.sz/">News</a>
+    <a href="https://en.wikipedia.org/wiki/Demographics_of_Eswatini">Demographics</a>
+    <iframe src="https://calendar.google.com/calendar/embed?src=bmakhanya424%40gmail.com&ctz=UTC" style="border: 0" width="300" height="400" frameborder="0" scrolling="no"></iframe>
+  </div>
+  
+  <!-- Page content -->
+  <div class="content">
+    <img class="hotel" src="images/hotel.webp" alt="lugogo sun" loading="lazy">
+    <img class="basket" src="images/ocean basket.webp" alt="seafoods" loading="lazy">
+    <img class="mantenga" src="images/bush fire.webp" alt="cultural village" loading="lazy">
+    <img class="sibebe" src="images/sibebe.webp" alt="sibebe resort" loading="lazy">
+    <img src="images/umhlanga (1).webp" alt="reed dance" loading="lazy">
+    <img src="images/sibhaca.webp" alt="sibhaca dance" loading="lazy">
     </div>
 </main>
 <div>
@@ -78,6 +66,6 @@
     </p>
     <p >Last Modification: <span id="lastModified"></span> </p>
 </footer>
-<script src="scripts/getDates.js"></script>
+<script src="scripts/chamber.js"></script>
 </body>
 </html>

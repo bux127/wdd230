@@ -57,7 +57,19 @@
     flex-direction: column;
     text-align: center;
    }
+   .response {
+    grid-template-columns: 1fr;
+   }
+
+    .content  {
+    grid-template-columns: 1fr;
     
+   }
+
+   .sidebar {
+    justify-content: center;
+    text-align: center;
+   }
 }
 
 @media (min-width: 900px ) {
@@ -67,7 +79,9 @@
         flex: 1 1 100%;
         text-align: center;
         }
+
     .menu {
         display: none;
-        }
+    };
+
 }
