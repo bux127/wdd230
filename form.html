@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innocent Makhanya - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230-Web Frontend Development for Banele Makhanya - course assignment portal">
+    <meta name="author" content="Innocent Makhanya">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="images/favicon (1).ico">
+    <meta property="og.title" content="Web Frontend Developmnent"/>
+    <meta property="og.type" content="Website on Front end development"/>
+    <meta property="og.image" content="https://www.google.com/imgres?imgurl=https%3A%2F%2Fblog.l2b.co.za%2Fwp-content%2Fuploads%2F2023%2F07%2F272fdb8e-ccd4-4ff0-bf4b-c8dc374a1915.jpeg&tbnid=l0fwPdKHmA4s8M&vet=12ahUKEwjI-6DDgsiCAxWOXaQEHZAnD1YQMygregUIARCsAQ..i&imgrefurl=https%3A%2F%2Fblog.l2b.co.za%2Ffeatured-project-fnb-head-office-ezulwini%2F&docid=vltEi3o6fWv8gM&w=2048&h=1152&itg=1&q=ezulwini%20eswatini&ved=2ahUKEwjI-6DDgsiCAxWOXaQEHZAnD1YQMygregUIARCsAQ"/>
+    <meta property="og.url" content="https://bux127.github.io/wdd230/"/>
+    
+</head>
+<body>
+<header>
+    <div id="mode">🕶️</div>
+    <img class="profile" src="prof.webp" alt="profile image">
+    <h1>Banele Innocent Makhanya</h1>
+    <img>
+</header>
+
+<a class="menu"></a>
+
+<nav>
+    
+    <a href="index.html">Home</a>
+    <a href="chamber/index.html">Chamber</a>
+    <a href="week01/chamber-site-plan.html">Site Plan</a>
+    <a href="form.html">Form</a>
+</nav>
+<main>
+    <div id="formMsg"></div>
+    <h1>Form</h1>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <label id="userName">Username* <input type="text" name="username" required></label>
+            </fieldset>
+
+            <fieldset>
+                <label id="security">Enter your assword* <input type="text" name="password" pattern="(*?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8}" required></label>
+                
+            </fieldset>  
+            
+            <fieldset>
+                <label id="secure">Re-enter your password* <input type="text" name="password2" required></label>
+            </fieldset>
+
+            <fieldset>
+                <label id="mail">Email* <input type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" placeholder="Please enter a valid email address" required></label>
+            </fieldset>
+
+            <fieldset>
+               <label id="rate"><input type="range" name="rate" min="0" max="10" value="0" step="1" list="values"></label> 
+            </fieldset>
+
+            <input type="submit" value="Complete My Form" class="submit">
+        </form>
+</main>
+    
+<footer>
+    <p>
+        <ul>
+            <li>&copy <span class ="year"></span></li>
+            <li>Banele Makhanya</li>
+            <li>Swaziland</li>
+
+        </ul>
+    </p>
+    <p >Last Modification: <span id="lastModified"></span> </p>
+</footer>
+<script src="scripts/getDates.js"></script>
+</body>
+</html>

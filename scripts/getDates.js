@@ -47,5 +47,26 @@ numVisits++;
 
 localStorage.setItem("numVisits-ls", numVisits);
 
+//form
 
+const lock = document.querySelector("security");
+const key = document.querySelector("secure");
+
+const message = document.querySelector("formMsg");
+
+key.addEventListener("same", checkSame);
+
+function checkSame() {
+	if (lock.value!== key.value) {
+		message.textContent = "Password does not match";
+		message.style.visibilty = "show";
+		key.style.backgroundColor = '#fff0f3'
+		key.value = "";
+		key.focus();
+	}else{
+		message.style.display = "none";
+		key.style.backgroundColor = "#fff";
+		key.style.color = "#000";
+	}
+}
 
