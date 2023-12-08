@@ -70,3 +70,16 @@ function checkSame() {
 	}
 }
 
+//form range
+
+const rangeValue = document.getElementById("calibration");
+const range = document.getElementById("values");
+
+range.addEventListener('change', displaySelection);
+range.addEventListener('input', displaySelection);
+
+function displaySelection() {
+	rangeValue.innerHTML = range.value;
+}
+
+

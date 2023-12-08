@@ -1,0 +1,59 @@
+:root {
+    --main-validColor: lightgreen solid;
+    --main-requiredColor: purple solid;
+    --main-fontSize: .8rem
+
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #721ce3;
+    margin: 0 4rem;
+    padding: 0 .5rem;
+}
+
+form label.view, form div {
+    display: block;
+    margin-top: 1rem;
+    color: #ff5733;
+    font-size: var(--main-fontSize);
+}
+
+form label.view input, form label.view select {
+    --webkit--appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #581845;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+form input.submit {
+    border: none;
+    background-color: #153f66;
+    color: #fbdcfe;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.view input:required {
+    border-left: var(--main-requiredColor) 5px;
+}
+
+form label.view input:required:valid {
+    border-left: var(--main-validColor) 5px;
+}

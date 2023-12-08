@@ -35,28 +35,40 @@ modeButton.addEventListener("click", () => {
 
 
 
-const msToDays = 84600000;
-const visitsDisplay = document.querySelector(".visits");
-let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
-let lastVisit = numVisits - 1;
-let difference = Date.now() - lastVisit
 
-if (numVisits !== 0) {
-	visitsDisplay.textContent = numVisits;
-}else if (numVisits == 0)  {
-	visitsDisplay.textContent = `Welcome, let us know if you have any questions`;
-}else if (numVisits == 1) {
-	visitsDisplay. textContent = `You last visited 1 day ago`;
-}else if (difference < msToDays) {
-	visitsDisplay.textContent = `Back so soon! Awesome!`;
-}else if (numVisits > 1){
-	visitsDisplay.textContent = "You last visited" + difference/msToDays + "ago."
+// Time between visits
+
+let storedDate = localStorage.getItem('lastVisitTime')
+
+const now = Date.now();
+
+localStorage.setItem('lastVisitTime', now)
+ 
+if (storedDate == null) {
+
+  storedDate = now
+
 }
-numVisits++;
 
-localStorage.setItem("numVisits-ls", numVisits);
+//I want to display hours since the last visit
 
+const msInHour = 1000 * 60 * 60;
 
+const difference = (now - storedDate)/msInHour
+ 
+console.log(difference)
+ 
+if (difference > 1) {
+
+  message = `It has been ${Math.floor(difference)} hours since your last visit`
+
+} else {
+
+  message = `Welcome to my website`
+
+}
+ 
+document.querySelector('#visitCount').textContent = message;
 
 
 

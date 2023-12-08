@@ -36,28 +36,33 @@
 <main>
     <div id="formMsg"></div>
     <h1>Form</h1>
-        <form method="get" action="thanks.html">
+        <form method="get" action="record.html">
             <fieldset>
-                <label id="userName">Username* <input type="text" name="username" required></label>
-            </fieldset>
-
-            <fieldset>
-                <label id="security">Enter your assword* <input type="text" name="password" pattern="(*?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8}" required></label>
+                <legend>Please Fill The Form</legend>
+                <label class="view" id="userName">Username* <input type="text" name="username" required></label>
+                <label class="view" id="security">Enter your assword* <input type="text" name="password" pattern="(*?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8}" required></label>
+                <label class="view" id="secure">Re-enter your password* <input type="text" name="password2" required></label>
+                <label class="view" id="mail">Email* <input type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" placeholder="Please enter a valid email address" required></label>
                 
-            </fieldset>  
-            
-            <fieldset>
-                <label id="secure">Re-enter your password* <input type="text" name="password2" required></label>
+                <label class="view" id="rate"><input type="range" name="rate" min="0" max="10" value="0" step="1" list="values">
+                <datalist id="values">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+                <div id="calibration">0</div>
+                </label>
             </fieldset>
 
-            <fieldset>
-                <label id="mail">Email* <input type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" placeholder="Please enter a valid email address" required></label>
-            </fieldset>
-
-            <fieldset>
-               <label id="rate"><input type="range" name="rate" min="0" max="10" value="0" step="1" list="values"></label> 
-            </fieldset>
-
+           
             <input type="submit" value="Complete My Form" class="submit">
         </form>
 </main>
