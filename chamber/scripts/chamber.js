@@ -7,7 +7,7 @@ document.querySelector('.year').innerHTML = currentYear;
 var latesDate = document.lastModified;
 document.querySelector('#lastModified').innerHTML = latesDate;
 
-const mainnav = document.querySelector('nav');
+const mainnav = document.querySelector('.nav');
 const hambutton = document.querySelector('.menu');
 
 
@@ -38,37 +38,26 @@ modeButton.addEventListener("click", () => {
 
 // Time between visits
 
-let storedDate = localStorage.getItem('lastVisitTime')
 
 const now = Date.now();
-
-localStorage.setItem('lastVisitTime', now)
+localStorage.setItem('visits', now);
+let storedDate = (localStorage.getItem('visits'));
  
 if (storedDate == null) {
-
   storedDate = now
-
 }
-
 //I want to display hours since the last visit
 
 const msInHour = 1000 * 60 * 60;
-
 const difference = (now - storedDate)/msInHour
- 
 console.log(difference)
  
 if (difference > 1) {
-
   message = `It has been ${Math.floor(difference)} hours since your last visit`
-
 } else {
-
   message = `Welcome to my website`
-
 }
  
-document.querySelector('#visitCount').textContent = message;
-
+document.querySelector('.active').textContent = message;
 
 

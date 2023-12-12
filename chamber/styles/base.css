@@ -31,19 +31,30 @@ body {
     grid-row: 1/ 2;
 }
 header {
-    display: grid;
-    grid-template-columns: auto 1fr 3fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: yellowgreen;
     grid-auto-flow: column;
   
 }
- 
-header img {
-    top: 10px;
-    width: 50px;
-    height: 50px;
-    align-self: center;
+
+.icons {
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: 1fr;    
+    box-sizing: border-box;
+    list-style: none;
+    grid-auto-flow: column;
+    justify-self: end;
+    
 }
+
+.img {
+    justify-self: center;
+    
+}
+ 
 
 h1 {
     font-family: 'Orbitron';
@@ -54,16 +65,10 @@ span {
     font-weight: 100;
 }
 
-.icons {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 10px;
-    list-style: none;
-    
-}
+
 
 .home {
-    background: orangered;
+    background: rgba(90, 90, 90, .5);
 }
 
 .section {
@@ -76,6 +81,10 @@ span {
     
 }
 
+.response {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
 
 .sidebar {
     margin: 0;
@@ -114,14 +123,14 @@ span {
   }
   
   /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
-  div.content {
+  .content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
     background: #001d4a;
     gap: 4px;
     padding: 4px;
-    height: 1000px;
+   
   }
 
   .events {
@@ -139,26 +148,7 @@ span {
   }
     
   
-  /* On screens that are less than 700px wide, make the sidebar into a topbar */
-  @media screen and (max-width: 700px) {
-    .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-    .sidebar a {float: left;}
-    div.content {margin-left: 0;}
-  }
-  
-  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-  @media screen and (max-width: 400px) {
-    .sidebar a {
-      text-align: center;
-      float: none;
-    }
-  }
-
-
+ 
 .section h3 {
     justify-items: center;
 }
@@ -220,11 +210,6 @@ span {
     transform: scale(1.2);;
 }
 
-.img {
-    justify-self: auto;
-    transform: translateX(10px);
-}
-
 section h3 h4 {
     border-bottom: 1px solid #001d4a;
     text-align: center;
@@ -271,4 +256,87 @@ footer, p, ul, li {
 
 .end p {
     text-align: center;
+}
+
+
+.f_title, form {
+    margin: 20px;
+}
+
+form {
+    grid-column: 1 / 2;
+}
+
+.mainform {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    grid-template-rows: 1fr;
+}
+
+.column {
+    grid-column: 2 / 3;
+    font-family: 'Yatra One';
+    color: #e52165;
+}
+
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #445ba9;
+    margin: 0 4rem;
+    padding: 0 .5rem;
+    font-family: 'Yatra One';
+}
+
+form label.top, form div {
+    display: block;
+    margin-top: 1rem;
+    color: purple;
+    font-size: 1rem;
+    font-family: 'Teko';
+}
+
+form label.top input, form label.top select {
+    --webkit--appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem;
+    color: #555;
+    font-family: 'Teko';
+}
+
+form input.submit {
+    border: none;
+    background-color: #445ba9;
+    color: yellowgreen;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.top input:required {
+    border-left: blue solid 5px;
+}
+
+form label.top input:required:valid {
+    border-left: yellowgreen solid 5px;
 }

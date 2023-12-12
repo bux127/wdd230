@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce</title>
+    <meta name="description" content="WDD 230-Web Chamber of Commerce Website">
+    <meta name="author" content="Innocent Makhanya">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og.title" content="Web Frontend Developmnent"/>
+    <meta property="og.type" content="Website for Ezulwini Chamber of Commerce"/>
+    <meta property="og.image" content="https://www.dreamstime.com/downtown-mbabane-capital-city-swaziland-africa-southern-image156495984"/>
+    <meta property="og.url" content="https://bux127.github.io/wdd230/"/>
+    </head>
+
+<body>
+    <header>
+        <img class="img" src="images/shopping-bag_1991590.png" alt="shooping" loading="lazy" width="50" height="50">
+        <p><h1>Ezulwini <br><span>chamber of commerce</span></h1></p>
+        <ul class="icons">
+            <li><a href=""><img src="images/facebook_4494475.png" alt="facebook icon" loading="lazy" width="50" height="50"></a></li>
+            <li><a href=""><img src="images/instagram_2111463.png" alt="instargram icon link" loading="lazy" width="50" height="50"></a></li>
+            <li><a href=""><img src="images/twitter_4494477.png" alt="twitter link" loading="lazy" width="50" height="50"></a></li>
+        </ul>
+
+    </header>
+    <a class="menu"></a>
+    <nav>
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="">Directory</a>
+            <a href="join.html">Join</a>
+    </nav>
+    <main class="mainform ">
+    <h1 class="f_title">Membership Application</h1>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top">First Name* <input type="text" name="firstname" required></label>
+                <label class="top">Last Name* <input type="text" name="lastname" required></label>
+                <label class="top" id="title">Position/Title <input type="text" name="title" pattern=""></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="username@gmail.com" required></label>
+                <label class="top">Phone <input type="tel" name="phone" placeholder="12567744"></label>                
+                <label class="top" id="company">Business/Ogarnization Name* <input type="text" name="business" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Membership Level</legend>
+                
+                <label class="sbs"><input type="radio" name="membership" value="np"> NP </label>
+                <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze</label>
+                <label class="sbs"><input type="radio" name="membership" value="silver"> Silver</label>
+                <label class="sbs"><input type="radio" name="membership" value="gold"> Gold</label>
+                
+            </fieldset>
+                <fieldset>
+                    <legend>Business Description</legend>
+                    <label class="top" id="details"> Business Details <input type="text" name="details" ></label>
+                
+                </fieldset>
+
+            <fieldset>
+                <legend>Compilation time</legend>
+                <label id="timestamp"><input type="hidden" name="timestamp"></label>
+                <div id="output"></div>
+            </fieldset>
+               
+           
+            <input type="submit" value="Apply For Membership" class="submit">
+        </form>
+
+            <div class="column">
+                <h3>Special events</h3>
+                <p>Training</p>
+                <p>Advertising</p>
+                <p>Event discounts</p>
+
+            </div>
+                
+    </main>
+
+    
+    <footer>
+
+        <div class="end">
+            <h2>Ezulwini <br>Chamber of Commerce</h2>
+            <p>banelemakhanya424@gmail.com <br> +(268)767517490 <br> Location Map</p>
+        </div>
+
+
+            <ul>
+                <li>&copy <span class ="year"></span></li>
+                <li> | Banele Makhanya</li>
+                <li> | Swaziland</li>
+                <li> | WDD 230 Project</li>
+                <li> | Last Modification: <span id="lastModified"></span> </p></li>
+    
+            </ul>
+       
+    </footer>
+    <script src="scripts/chamber.js"></script>
+    
+</body>
+</html>

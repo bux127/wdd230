@@ -79,7 +79,37 @@
    .join {
     top: 700px;
    }
+
+.sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+      float: left;
+    }
+
+  div.content {
+      margin-left: 0;
+    }
+    .sidebar a {
+        text-align: center;
+        float: none;
+      }
+
+    
+  .column {
+    display: none;
+  }
+
+  .mainform {
+    grid-template-columns: 1fr;
+  }
+
 }
+
+ 
+ 
 
 @media (min-width: 900px ) {
     
@@ -91,6 +121,17 @@
 
     .menu {
         display: none;
-    };
+    }
 
+    .img {
+        padding-right: 200px;
+    }
 }
+ /* On screens that are less than 700px wide, make the sidebar into a topbar */
+/* @media (max-width: 700px) {
+    
+
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally *
+  @media (max-width: 400px) {
+    

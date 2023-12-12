@@ -1,0 +1,29 @@
+{
+    "familyName" : "Makhanya",
+    "homeTown" : "Ezulwini",
+    "numberOfRecords": 4,
+    "moved" : 2016,
+    "bishobricVisited" : true,
+    "members" : [
+      {
+        "name" : "Nelson",
+        "gender" : "Male",
+        "birthDate" : "August 5, 1990"
+    },
+    {
+        "name" : "Thabani",
+        "gender" : "Male",
+        "birthDate" : "January 16, 1989"
+    },
+    {
+        "name" : "Banele",
+        "gender" : "Male",
+        "birthDate" : "July 7, 1989"
+    },
+    {
+        "name" : "Mzamo",
+        "gender" : "Male",
+        "birthDate" : "May 17, 1986"
+    }
+  ]
+}
