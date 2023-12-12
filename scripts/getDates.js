@@ -33,8 +33,9 @@ modeButton.addEventListener("click", () => {
 	}
 });
 
-const visitsDisplay = document.querySelector(".visits");
 
+//page visits
+const visitsDisplay = document.querySelector("#visits");
 let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
 
 if (numVisits !== 0) {
@@ -42,9 +43,7 @@ if (numVisits !== 0) {
 } else {
 	visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
 }
-
 numVisits++;
-
 localStorage.setItem("numVisits-ls", numVisits);
 
 //form
@@ -56,17 +55,24 @@ const message = document.querySelector("formMsg");
 
 key.addEventListener("same", checkSame);
 
+
+const kp1 = document.querySelector("#password");
+const kp2 = document.querySelector("#password2");
+const messages = document.querySelector("#message");
+
+kp2.addEventListener("focusout", checkSame);
 function checkSame() {
-	if (lock.value!== key.value) {
-		message.textContent = "Password does not match";
-		message.style.visibilty = "show";
-		key.style.backgroundColor = '#fff0f3'
-		key.value = "";
-		key.focus();
-	}else{
-		message.style.display = "none";
-		key.style.backgroundColor = "#fff";
-		key.style.color = "#000";
+	if (kp1.value !== kp2.value) {
+		messages.textContent = "Passwords DO NOT MATCH!";
+		messages.style.color = "red";
+		messages.style.visibility = "show";
+		kp2.style.backgroundColor = "#fff0f3";
+		kp2.value = "";
+		kp2.focus();
+	} else {
+		messages.style.display = "none";
+		kp2.style.backgroundColor = "#fff";
+		kp2.style.color = "#000";
 	}
 }
 
@@ -75,6 +81,13 @@ function checkSame() {
 const rangeValue = document.getElementById("calibration");
 const range = document.getElementById("values");
 
+range.addEventListener('change', displayRatingValue);
+range.addEventListener('input', displayRatingValue);
+
+function displayRatingValue() {
+    rangevalue.innerHTML = range.value;
+}
+
 range.addEventListener('change', displaySelection);
 range.addEventListener('input', displaySelection);
 
@@ -82,4 +95,37 @@ function displaySelection() {
 	rangeValue.innerHTML = range.value;
 }
 
+//weather
+
+
+// Get weather
+const currentTemp = document.querySelector('#temp');
+const weatherIcon = document.querySelector('#wicon');
+const climate = document.querySelector('#climate');
+
+
+const url = 'https://api.openweathermap.org/data/2.5/weather?-26.397769652501967, 31.173061312871386&units=imperial&appid=5443c1edf2b4aa0ca3be31167228081e';
+
+async function fetchWeatherApi() {
+  try {
+    const response = await fetch(url);
+    if (response.ok) {
+      const data = await response.json();
+      displayResults(data);
+      console.log(data);
+    } else {
+        throw Error(await response.text());
+    }
+  } catch (error) {
+      console.log(error);
+  }
+}
+
+const displayResults = (weather) => {
+    weatherIcon.setAttribute('src', `https://openweathermap.org/img/w/${weather.weather[0].icon}.png`);
+    weatherIcon.setAttribute('alt', `${weather.weather[0].main}`);
+    climate.textContent = `${weather.weather[0].description}`
+};
+
+fetchWeatherApi();
 
