@@ -6,6 +6,7 @@
     <title>Chamber of Commerce</title>
     <meta name="description" content="WDD 230-Web Chamber of Commerce Website">
     <meta name="author" content="Innocent Makhanya">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="images/favicon.ico">
@@ -18,28 +19,33 @@
 <body>
     <header>
         <div id="mode">🕶️</div>
-        <img class="img" src="images/shopping-bag_1991590.png" alt="icon">
-        <p><h1>Ezulwini <br><span>chamber of commerce</span></h1></p>
+        <img class="img" src="images/shopping-bag_1991590.png" alt="shooping" loading="lazy" width="50" height="50" >
+        <h1>Ezulwini <br><span>chamber of commerce</span></h1>
         <ul class="icons">
-            <li><a href=""><img src="images/facebook_4494475.png" alt="facebook icon"></a></li>
-            <li><a href=""><img src="images/instagram_2111463.png" alt="instargram icon link"></a></li>
-            <li><a href=""><img src="images/twitter_4494477.png" alt="twitter link"></a></li>
+            <li><a href="#"><img src="images/facebook_4494475.png" alt="facebook icon" loading="lazy" width="50" height="50"></a></li>
+            <li><a href="#"><img src="images/instagram_2111463.png" alt="instargram icon link" loading="lazy" width="50" height="50"></a></li>
+            <li><a href="#"><img src="images/twitter_4494477.png" alt="twitter link" loading="lazy" width="50" height="50"></a></li>
         </ul>
 
     </header>
-
-    <nav>
+    <a class="menu"></a>
+    <nav class="nav">
             <a href="index.html">Home</a>
             <a href="discover.html">Discover</a>
-            <a href="">Directory</a>
-            <a href="">Join</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>    
     </nav>
-    <main>
-        <h1>Membership Application</h1>
-    <p>Thanks for applying to create a membership. Your response will be e-mailed in 24hours!</p>
-
-    </main>
     
+        <main id="include">
+
+            <div class="switch">
+                <button id="grid">⏹️Grid</button>
+                <button id="list">📄List</button>
+            </div>
+            
+            
+        </main>
+
     <footer>
 
         <div class="end">
@@ -58,7 +64,7 @@
             </ul>
        
     </footer>
-    <script src="scripts/chamber.js"></script>
+    <script  src="scripts/chamber.js"></script>
     
 </body>
 </html>

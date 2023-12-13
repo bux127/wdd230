@@ -1,3 +1,5 @@
+
+
 let currentDate = new Date();
 let currentYear = currentDate.getFullYear();
 
@@ -58,6 +60,107 @@ if (difference > 1) {
   message = `Welcome to my website`
 }
  
-document.querySelector('.active').textContent = message;
+//document.querySelector('.active').textContent = message;
 
 
+// fetch json
+
+const url = '../data/members.json'
+const cards = document.querySelector('#include');
+
+async function getMembersData() {
+    const response = await fetch(url);
+    const data = await response.json();
+    console.table(data.members); 
+    displayMembers(data.members);
+  }
+  
+  getMembersData();
+
+  
+  const displayMembers = (members) => {
+    members.forEach((member) => {
+      let card = document.createElement('section');
+      let name = document.createElement('h4');
+	    let phone = document.createElement('p');
+      let address = document.createElement('p');
+      let website = document.createElement('a');
+	    let level = document.createElement('p');
+      let portrait = document.createElement('img');
+  
+      name.textContent = `${member.name}`;
+      phone.textContent = `${member.phone}`;
+      address.textContent = `${member.address}`;
+	  website.textContent = `${member.website}`;
+	  level.textContent = `${member.membershipLevel}`
+	
+     
+      portrait.setAttribute('src', member.profilePic);
+      portrait.setAttribute('alt', `Portrait of ${member.name}`); 
+      portrait.setAttribute('loading', 'lazy');
+      portrait.setAttribute('width', '340');
+      portrait.setAttribute('height', '200');
+  
+      // Append the section(card) with the created elements
+	  card.appendChild(portrait);
+      card.appendChild(name); //fill in the blank
+      card.appendChild(address);
+      card.appendChild(phone);
+      card.appendChild(website);
+      card.appendChild(level);
+
+      
+  
+      cards.appendChild(card);
+    }); // end of arrow function and forEach loop
+  }
+
+  displayMembers();
+ 
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("#include");
+
+// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
+
+gridbutton.addEventListener("click", () => {
+	// example using arrow function
+	display.classList.add("grid");
+	display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList); // example using defined function
+
+function showList() {
+	display.classList.add("list");
+	display.classList.remove("grid");
+}
+//weather
+
+const currentTemp = document.querySelector('#current-temp');
+const captionDesc = document.querySelector('#details');
+
+const url1 = 'https://api.openweathermap.org/data/2.5/weather?lat=-26.4018&lon=31.1783&units=imperial&appid=5443c1edf2b4aa0ca3be31167228081e';
+
+async function fetchWeatherApi() {
+  try {
+    const response = await fetch(url1);
+    if (response.ok) {
+      const data = await response.json();
+      displayResults(data);
+      console.log(data);
+    } else {
+        throw Error(await response.text());
+    }
+  } catch (error) {
+      console.log(error);
+  }
+}
+
+const displayResults = (weather) => {
+    currentTemp.textContent = `${weather.main.temp}`;
+    captionDesc.textContent = `${weather.weather[0].description}`
+};
+
+
+fetchWeatherApi();

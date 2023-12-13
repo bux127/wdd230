@@ -1,0 +1,67 @@
+{
+    "members" : [
+       
+        {    
+            "name" : "Summerfield Resort",
+            "address": " MR17 Dwaleni Rd Nokwane, Manzini, Eswatini",
+            "phone" : "+268 2518 4693",
+            "website" : "https://www.summerfieldresort.com",
+            "profilePic" : "https://www.pexels.com/photo/a-boy-in-the-locker-room-putting-on-protective-gears-8971945/",
+            "membershipLevel" : "Gold"
+        },
+
+        {    
+            "name" : "Sibebe Resort",
+            "address": "Pine Valley Road H100 Mbabane",
+            "phone" : "+268 7804 9560",
+            "website" : "https://sibeberesort.com",
+            "profilePic" : "../images/sibebe-resort.webp",
+            "membershipLevel" : "Gold"
+        },
+
+        {    
+            "name" : "Happy Valley hotel",
+            "address": " H55Q+RGF, Lombaba, Eswatini",
+            "phone" : " +268 2416 3480",
+            "website" : "https://happyvalleyhotel.com",
+            "profilePic" : "./happy valley.webp",
+            "membershipLevel" : "Silver"
+        },
+
+        {    
+            "name" : "The Royal Swazi",
+            "address": "H5R9+WQ, Lobamba, Eswatini",
+            "phone" : "+268 2416-8804",
+            "website" : "https://suninternational.com",
+            "profilePic" : "images/royal swazi 1.webp",
+            "membershipLevel" : "Silver"
+        },
+
+        {    
+            "name" : "Sibane Hotel",
+            "address": "J55C+724, MR103, Lobamba, Eswatin",
+            "phone" : "+27 81 420 1793",
+            "website" : "https://sibanehotel.co.sz",
+            "profilePic" : "images/sibane.webp",
+            "membershipLevel" : "Bronze"
+        },
+
+        {    
+            "name" : "Tums George Hotel",
+            "address": "Ngwane Street, Manzini, Swaziland, M200",
+            "phone" : " +268 2505 2260",
+            "website" : "https://www.tgh.co.sz.",
+            "profilePic" : "images/tums george.webp",
+            "membershipLevel" : "Silver"
+        },
+
+        {    
+            "name" : "The Royal villas",
+            "address": "Old Manzini Mbabane Rd, Ezulwini, Eswatini",
+            "phone" : "+26824162042",
+            "website" : "http://www.royalvillas.co.sz.",
+            "profilePic" : "images/royal swazi.webp",
+            "membershipLevel" : "Gold"
+        }
+    ]
+}
