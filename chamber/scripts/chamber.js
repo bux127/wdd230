@@ -115,9 +115,8 @@ async function getMembersData() {
     }); // end of arrow function and forEach loop
   }
 
-  displayMembers();
  
-const gridbutton = document.querySelector("#grid");
+`const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector("#include");
 
@@ -134,13 +133,15 @@ listbutton.addEventListener("click", showList); // example using defined functio
 function showList() {
 	display.classList.add("list");
 	display.classList.remove("grid");
-}
+}`
 //weather
 
 const currentTemp = document.querySelector('#current-temp');
 const captionDesc = document.querySelector('#details');
+//const forecastInfo = document.querySelector('#forecast');
 
 const url1 = 'https://api.openweathermap.org/data/2.5/weather?lat=-26.4018&lon=31.1783&units=imperial&appid=5443c1edf2b4aa0ca3be31167228081e';
+//const forecastUrl = 'https://api.openweathermap.org/data/2.5/weather?lat=-26.4018&lon=31.1783&exclude=curent,minutely&appid=5443c1edf2b4aa0ca3be31167228081e';
 
 async function fetchWeatherApi() {
   try {
@@ -157,10 +158,28 @@ async function fetchWeatherApi() {
   }
 }
 
+async function fetchWeatherApi() {
+  try {
+    const response = await fetch(forecastUrl);
+    if (response.ok) {
+      const data = await response.json();
+      displayResults(data);
+      console.log(data);
+    } else {
+        throw Error(await response.text());
+    }
+  } catch (error) {
+      console.log(error);
+  }
+}
+
+
 const displayResults = (weather) => {
     currentTemp.textContent = `${weather.main.temp}`;
     captionDesc.textContent = `${weather.weather[0].description}`
+
 };
 
 
 fetchWeatherApi();
+
