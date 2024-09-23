@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Poppins';
+}
+
+header {
+    background: #b50027;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: .5rem;
+
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, .70) ;
+    border-radius: 5px;
+}
+.name {
+    color: #fff;
+    font-size: 2rem;
+}
+
+nav {
+    background: #00154f;
+    text-align: center;
+    padding: .6rem 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f4af1b;
+}
+
+li:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.active {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+h1 {
+    font-size: 1.2rem;
+    margin: 0 auto;
+    padding-top:.5rem;
+    width: max-content;
+    border-bottom: 1px solid black;
+    font-weight: 500;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+section {
+    border: 1px solid black;
+    margin: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, .70);
+}
+
+
+section h2 {
+    background: #00154f;
+    color: #f4af1b;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+section li {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+section div {
+    text-align: center;
+}
+
+footer {
+    display: block;
+    text-align: center;
+    background: #00154f;
+    color: #f4af1b;
+    padding: 1rem; 
+}
+
+
+.footer {
+    color: white;
+}
+
+.state {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
