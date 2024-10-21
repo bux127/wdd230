@@ -1,0 +1,9 @@
+@media (min-width: 800px) {
+    .menu {
+        display: none;
+    }
+
+    .nav_menu {
+        display: flex;
+    }
+}

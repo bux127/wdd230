@@ -1,6 +1,3 @@
-document.getElementById('date').innerHTML = new Date(document.lastModified);
-
-
 const menu = document.querySelector('.menu');
 const nav = document.querySelector('.nav_menu');
 
@@ -14,3 +11,4 @@ document.querySelectorAll('.nav_link').forEach(n => n.addEventListener('click', 
     nav.classList.remove('active')
 }))
 
+document.getElementById('date').innerHTML = new Date(document.lastModified);
