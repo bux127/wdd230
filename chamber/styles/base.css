@@ -107,7 +107,7 @@ img {
     background: dodgerblue;
     border-radius: 2px;
     margin-top: 4px;
-    transform: all .3s ease-in-out;
+    transform: .3s ease-in-out;
 }
 
 .nav_menu.active {
