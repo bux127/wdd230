@@ -17,14 +17,13 @@
     <meta property="og:type" content="WDD 230 Course">
     <meta property="og:image" content="https://images.app.goo.gl/Go9TF7LU1MD7eL54A">
     <meta property="og:url" content="https://bux127.github.io/wdd230/">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
- <header>
+<header>
     <img src="images/image.jpg" alt="profile-imag">
     <span class="name">Banele Makhanya</span>
- </header>
- <nav>
+</header>
+<nav>
     <ul class="nav_menu">
         <li class="nav_item active"><a class="nav_link" href="">Home</a></li>
         <li class="nav_item"><a class="nav_link" href="chamber/index.html">Chamber</a></li>
@@ -37,8 +36,22 @@
         <span class="line"></span>
     </div>
 </nav>
- </nav>
- <main>
+
+    <div class="hero">
+        <picture>
+            <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+            <source srcset="images/hero-medium.webp" media="(max-width: 960px)">
+            <img src="images/large.webp" alt="boston temple">
+        </picture>
+        <div class="label">
+            <p>Boston Temple</p>
+        </div>
+    </div>
+
+
+<main>
+    
+        
     <h1>WDD 230 - Web Fontend Development</h1>
     <section class="card">
         <h2>Learning Activities</h2>
@@ -58,16 +71,16 @@
         <div>weather</div>
         <div>visits</div>
     </section>
- </main>
- <footer>
+</main>
+<footer>
     <div class="footer">
         <p>&copy;2024</p>
     <p>🌲Banele Innocent Makhanya🌲</p>
     <p class="state">Swaziland <span><img src="images/flag.png" alt="" width="30" height="20"></span></p>
     </div>
     <p>Last Modified: <span id="date"></span></p>
- </footer> 
+</footer> 
 
- <script src="scripts/getDates.js"></script>  
+<script src="scripts/getDates.js"></script>  
 </body>
 </html>
