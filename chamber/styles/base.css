@@ -36,6 +36,17 @@ a {
     gap: 1.5rem;
 }
 
+.title {
+    font-size: 1.4rem;
+    line-height: 1;
+    color: dodgerblue;
+}
+
+.title span {
+    color: #f00699;
+    font-size: 1.4rem;
+}
+
 .nav_menu {
     gap: 3rem;
     transition: .3s;
@@ -74,7 +85,13 @@ img {
     height: 100vh;
 }
 
+.btn:hover {
+    scale: .8;
+    opacity: .7;
+}
+
 .btn {
+    transition: .5s ease;
     padding: 8px;
     font-weight: 600;
     cursor: pointer;
