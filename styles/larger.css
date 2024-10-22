@@ -1,4 +1,4 @@
-@media (min-width: 700px) {
+@media (min-width: 800px) {
 
     
 
@@ -9,6 +9,10 @@
     nav ul {
         display: flex;
         justify-content: space-between;
+    }
+
+    .menu {
+        display: none;
     }
 
     nav ul li {
