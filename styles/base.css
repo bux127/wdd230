@@ -57,7 +57,7 @@ li:hover {
     background: white;
     border-radius: 2px;
     margin-top: 4px;
-    transform: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .nav_menu.active {
