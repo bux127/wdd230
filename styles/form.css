@@ -1,0 +1,87 @@
+#r {
+	width: 180px;
+	margin-bottom: 0;
+}
+
+#rangevalue {
+	font-size: 2rem;
+	color: navy;
+    margin: 0 2rem;
+}
+
+#rangevalues {
+	display: flex;
+	margin: 0 0 0 25px;
+	width: 200px;
+}
+
+#rangevalues option {
+	flex: 1 1 auto;
+}
+
+input[type=range] {
+	margin: 1rem;
+	padding: 0.5em;
+}
+
+#formmessage {
+	visibility: none;
+	margin: 10px;
+	padding: 0.5rem;
+	color: red;
+}
+
+#password:invalid {
+	background-color: #fff0f3;
+}
+
+.data input[type="text"],
+.data input[type="password"],
+.data input[type="email"] {
+    display: block;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: lightslategray;
+    width: 100%;
+    max-width: 400px;
+    background-color: #eee;
+    appearance: none;
+}
+
+.data input:required {
+    border-left: 5px solid dodgerblue;
+}
+
+.data input:required:valid {
+    border-left: 5px solid green;
+}
+
+.data fieldset {
+    margin: 2rem 0;
+    border: 1px solid lightslategray;
+    border-radius: 4px;
+    padding: .5rem 2%;
+}
+
+.data legend {
+    color: #445ba9;
+    padding: 0 .5rem;
+}
+
+.data label {
+    display: block;
+    padding-top: 1rem;
+    font-size: .9rem;
+}
+
+.data input[type="submit"]{
+    margin-top: 1rem;
+    padding: .75rem;
+    color: lightslategray;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 2px 2px 4px #999;
+    
+}

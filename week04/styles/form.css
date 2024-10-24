@@ -97,7 +97,7 @@ main {
     margin-right: 4px;
 }
 
-.wf1 input[type="button"]{
+.wf1 input[type="submit"]{
     margin-top: 1rem;
     padding: .75rem;
     color: lightslategray;
@@ -122,4 +122,23 @@ footer {
     padding: .5rem 2%;
     text-align: center;
     
+}
+
+@media only screen and (min-width: 35rem) {
+
+nav ul {
+    display: flex;
+    margin-left: 2%;
+}
+nav ul li {border: none;}
+nav ul li a{padding: .5rem 2rem;}
+nav ul li a:hover {background-color: firebrick;}
+}   
+
+@media only screen and (min-width: 64rem) {
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin:auto;
+}
 }
