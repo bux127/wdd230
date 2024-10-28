@@ -1,0 +1,32 @@
+{
+    "familyName" : "Makhanya",
+    "dateMoved" : 2002,
+    "familyCount" : "4",
+    "seenBishopric" : false,
+    "members" : [
+      {
+        "name" : "Nelson Makhanya",
+        "gender" : "male",
+        "age" : 34,
+        "birthDate" : "08 August 1990"
+      },
+      {
+        "name" : "Banele Makhanya",
+        "gender" : "male",
+        "age" : 35,
+        "birthDate" : "07 July 1989"
+      },
+      {
+        "name" : "Ruth Lokotfwako",
+        "gender" : "female",
+        "age" : 55,
+        "birthDate" : "06 September 1968"
+      },
+      {
+        "name" : "Mfundo Zwane",
+        "gender" : "male",
+        "age" : 38,
+        "birthDate" : "08 May 1986"
+      }
+    ]
+  }
