@@ -1,5 +1,6 @@
 const menu = document.querySelector('.menu');
 const nav = document.querySelector('.nav_menu');
+const load = document.querySelector('#loadtime');
 
 menu.addEventListener('click', () => {
     menu.classList.toggle('active');
@@ -10,6 +11,12 @@ document.querySelectorAll('.nav_link').forEach(n => n.addEventListener('click', 
     menu.classList.remove('active')
     nav.classList.remove('active')
 }))
+
+
+
+window.onload = function() {
+    document.getElementById('loadtime').innerHTML = (new Date);
+}
 
 document.getElementById('date').innerHTML = new Date(document.lastModified);
 
