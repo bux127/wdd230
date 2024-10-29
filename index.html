@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link href="/images/favicon.ico" rel="icon" type="image/x-icon">
@@ -61,15 +60,17 @@
             <li>Week 03: <a href="images/landscape.webp">WebP</a> | <a href="week03/lazyloading.html">lazyloading</a> | <a href="week03/responsive-images.html">Responsive images</a> | <a href="week03/bom.html">Web/LocalStorage</a></li>
             <li>Week 04: <a href="https://codepen.io/Banele-Makhanya/pen/KKJGMpb">Codepen</a> | <a href="week04/images/w3.JPG">W3</a> | <a href="week04/tablebuild.html">Table</a> | <a href="week04/index.html">Form</a></li>
             <li>Week 05: <a href="https://codepen.io/Banele-Makhanya/pen/eYxejzx">Psuedo Pen</a> | <a href="week05/new-ward-members.json">Json</a> | <a href="week05/prophets.html">Prophets</a> | <a href="week05/weather.html">Weather</a></li>
-            <li>Week 06:</li>
+            
             
         </ul>
     </section>
     <section class="card">
         <h2>Information</h2>
-        <div>twn</div>
-        <div>weather</div>
-        <div>visits</div>
+        <div class="flash">
+            <div class="weather"><img id="icon" src="" alt="">    <span id="temp"></span> - <span id="desc"></span></div>
+            <div>visit count : <span id="visit"></span></div>
+        </div>
+        
     </section>
 </main>
 <footer>

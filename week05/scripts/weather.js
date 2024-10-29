@@ -27,6 +27,7 @@ const displayResults = (data) => {
     let iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`
     let desc = data.weather[0].description;
    
+    weatherIcon.src = iconsrc;
     weatherIcon.setAttribute('alt', `${data.weather[0].icon}`);
     captionDesc.textContent = `${desc}`
 };

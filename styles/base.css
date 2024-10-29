@@ -149,6 +149,14 @@ footer {
     color: #00154f;
 }
 
+.flash {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: .9rem;
+    padding-top: .5rem;
+}
+
 
 
 @media(max-width: 800px) {
