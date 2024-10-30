@@ -44,6 +44,24 @@ localStorage.setItem("numVisits-ls", numVisits);
 */
 const baseURL = "https://bux127.github.io/wdd230/";
 const linksURL = "https://bux127.github.io/wdd230/chamber/data/members.json";
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("article");
+
+
+gridbutton.addEventListener("click", () => {
+	
+	display.classList.add("grid");
+	display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList); 
+
+function showList() {
+	display.classList.add("list");
+	display.classList.remove("grid");
+}
+
 
 async function getLinks() {
     const response = await fetch(linksURL);
@@ -52,4 +70,18 @@ async function getLinks() {
     displayMembers(data.members);
   }
   
+  const displayMembers = (members) => {
+    members.forEach((member) => {
+        const card = document.createElement('div');
+        card.innerHTML = `
+            <img src="${member.profilePic}">
+            <p>${member.address}</p>
+            <p>${member.phone}</p>
+            <p>${member.website}</p>
+            `;
+        cards.append(card);
+    });
+}
+
+
   getLinks();
