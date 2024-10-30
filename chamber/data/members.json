@@ -5,7 +5,7 @@
             "address": "H55R+Q57, Lobamba, Eswatini",
             "phone" : "+26824178100",
             "website" : "https://happyvalleyhotel.com",
-            "profilePic" : "https://www.pexels.com/photo/monochrome-photo-of-man-wearing-tuxedo-2761116/",
+            "profilePic" : "",
             "membershipLevel" : "Gold"
         },
 
@@ -14,7 +14,7 @@
             "address": "Shop 1, The Gables, MR103",
             "phone" : "+26878447711",
             "website" : "https://spursteakranches.com",
-            "profilePic" : "images/male-profile.webp",
+            "profilePic" : "../images/discover.webp",
             "membershipLevel" : "Gold"
         },
 
@@ -23,7 +23,7 @@
             "address": "Mr 103 Road, The Gables",
             "phone" : "=26824162454",
             "website" : "https://gables.muggandbean.co.za",
-            "profilePic" : "images/female-profile.webp",
+            "profilePic" : "",
             "membershipLevel" : "Silver"
         },
 
@@ -32,7 +32,7 @@
             "address": "Mr 103 Road, The Gables",
             "phone" : "+26824162555",
             "website" : "https://debonairspizza.co.za",
-            "profilePic" : "images/male-profile.webp",
+            "profilePic" : "",
             "membershipLevel" : "Silver"
         },
 
@@ -41,7 +41,7 @@
             "address": "Shop 100, The Gables",
             "phone" : "+26876705002",
             "website" : "https://kfc.com",
-            "profilePic" : "images/female-profile.webp",
+            "profilePic" : "",
             "membershipLevel" : "Bronze"
         },
 
@@ -50,7 +50,7 @@
             "address": "DR Plot 5, Ezulwini H106",
             "phone" : "+26824171269",
             "website" : "https://store.nandos.co.za",
-            "profilePic" : "images/male-profile.webp",
+            "profilePic" : "",
             "membershipLevel" : "Platinum"
         },
 
@@ -59,7 +59,7 @@
             "address": "706 Plot 3904, Mr103",
             "phone" : "+26824161016",
             "website" : "https://galitoschicken.com",
-            "profilePic" : "images/female-profile.webp",
+            "profilePic" : "",
             "membershipLevel" : "Gold"
         }
     ]
