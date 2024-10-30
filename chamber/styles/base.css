@@ -355,8 +355,33 @@ footer p {
         display: none; 
     }
     
+    .banner {
+        background: dodgerblue
+    }
+
+    .banner_cont {
+        padding:  16px;
+        max-width: 500px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .banner_text {
+        flex-grow: 1;
+        line-height: 1.4;
+        color: white;
+    }
     
-    
+
+    .banner_close {
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: white;
+
+    }
     
     
 

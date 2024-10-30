@@ -18,7 +18,7 @@ document.querySelectorAll('.nav_link').forEach(n => n.addEventListener('click', 
 
 document.getElementById('date').innerHTML = new Date(document.lastModified);
 
-/*
+
 // 1️⃣ Initialize display element variable
 const visitsDisplay = document.querySelector(".visits");
 
@@ -41,28 +41,11 @@ localStorage.setItem("numVisits-ls", numVisits);
 
 // 💡A client can view the localStorage data using the Applications panel in the browsers's DevTools - check it out on any major site.
 
-*/
 const baseURL = "https://bux127.github.io/wdd230/";
 const linksURL = "https://bux127.github.io/wdd230/chamber/data/members.json";
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
 const display = document.querySelector("article");
 const ad = document.querySelector('.advert');
 
-
-gridbutton.addEventListener("click", () => {
-	
-	display.classList.add("grid");
-	display.classList.remove("list");
-});
-
-
-listbutton.addEventListener("click", showList); 
-
-function showList() {
-	display.classList.add("list");
-	display.classList.remove("grid");
-}
 
 
 async function getLinks() {
@@ -83,7 +66,7 @@ async function getLinks() {
             `;
         cards.append(card);
         if (member.membershipLevel == 'Gold' || member.membershipLevel == 'Silver') {
-            ad.innerHTML =  Math.floor(Math.random(`${member.website}`));
+            ad.innerHTML = card;
         }
     })
 }
@@ -126,3 +109,20 @@ const displayResults = (data) => {
 
 apiFetch();
 
+
+//banner
+
+const ban = document.querySelector(".banner");
+const banner = document.querySelector(".banner_close");
+let now = new Date();
+let day = now.getDay();
+
+banner.addEventListener('click', function() {
+    ban.style.display = "none";
+})
+
+if (day == 1 || day == 2 || day == 3) {
+    ban.style.display = "block";
+}else{
+    ban.style.display = "none";
+}
