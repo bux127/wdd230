@@ -13,7 +13,7 @@
             "name" : "Sheba's Rock Spur",
             "address": "Shop 1, The Gables, MR103",
             "phone" : "+26878447711",
-            "website" : "https://spursteakranches.com",
+            "website" : "https://bux127.github.io/wdd230/chamber/images/spur.jpg",
             "profilePic" : "../images/discover.webp",
             "membershipLevel" : "Gold"
         },
@@ -23,7 +23,7 @@
             "address": "Mr 103 Road, The Gables",
             "phone" : "=26824162454",
             "website" : "https://gables.muggandbean.co.za",
-            "profilePic" : "",
+            "profilePic" : "https://bux127.github.io/wdd230/chamber/images/Mugg-Bean.jpg",
             "membershipLevel" : "Silver"
         },
 
@@ -32,7 +32,7 @@
             "address": "Mr 103 Road, The Gables",
             "phone" : "+26824162555",
             "website" : "https://debonairspizza.co.za",
-            "profilePic" : "",
+            "profilePic" : "https://bux127.github.io/wdd230/chamber/images/debonairs.jpg",
             "membershipLevel" : "Silver"
         },
 
@@ -41,7 +41,7 @@
             "address": "Shop 100, The Gables",
             "phone" : "+26876705002",
             "website" : "https://kfc.com",
-            "profilePic" : "",
+            "profilePic" : "https://bux127.github.io/wdd230/chamber/images/kfc.jpg",
             "membershipLevel" : "Bronze"
         },
 
@@ -50,7 +50,7 @@
             "address": "DR Plot 5, Ezulwini H106",
             "phone" : "+26824171269",
             "website" : "https://store.nandos.co.za",
-            "profilePic" : "",
+            "profilePic" : "https://bux127.github.io/wdd230/chamber/images/nandos.jpg",
             "membershipLevel" : "Platinum"
         },
 

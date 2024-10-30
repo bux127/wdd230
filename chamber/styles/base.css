@@ -342,18 +342,16 @@ footer p {
         flex-direction: column;
     }
     
-    .list .cards {
+    .list.cards {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
         margin: 0;
         padding: 0.25rem;
     }
     
-    .list .cards > * {
-        margin: 0 1rem;
-    }
     
-    .list .cards img {
+    
+    .list.cards img {
         display: none; 
     }
     
