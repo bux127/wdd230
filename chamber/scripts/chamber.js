@@ -47,6 +47,7 @@ const linksURL = "https://bux127.github.io/wdd230/chamber/data/members.json";
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector("article");
+const ad = document.querySelector('.advert');
 
 
 gridbutton.addEventListener("click", () => {
@@ -54,6 +55,7 @@ gridbutton.addEventListener("click", () => {
 	display.classList.add("grid");
 	display.classList.remove("list");
 });
+
 
 listbutton.addEventListener("click", showList); 
 
@@ -80,8 +82,48 @@ async function getLinks() {
             <p>${member.website}</p>
             `;
         cards.append(card);
+        if (member.membershipLevel == 'Gold' || member.membershipLevel == 'Silver') {
+            ad.innerHTML =  Math.floor(Math.random(member.website))
+        }
+        
     });
 }
 
+getLinks();
 
-  getLinks();
+
+
+//chamber weather
+
+const celc = document.querySelector('.chamber_temp');
+const describe = document.querySelector('.chamber_weather');
+const forecast = document.querySelector('.chamber_forecast');
+
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=-26.397533502892312&lon=31.174390313757037&units=metric&appid=fc8d1b420fc07c171a0593af05bbeb2b';
+const url1 = 'https://api.openweathermap.org/data/2.5/forecast/daily?lat=-26.397533502892312&lon=31.174390313757037&cnt=3&units=metric&appid=fc8d1b420fc07c171a0593af05bbeb2b';
+
+async function apiFetch() {
+    try {
+    const response = await fetch(url);
+    if (response.ok) {
+        const data = await response.json();
+        displayResults(data);
+        console.log(data);
+    } else {
+        throw Error(await response.text());
+    }
+} catch (error) {
+    console.log(error);
+}
+}
+
+
+
+const displayResults = (data) => {
+    celc.innerHTML = `${data.main.temp}`
+    let desc = data.weather[0].description;
+    describe.textContent = `${desc}`
+};
+
+apiFetch();
+
