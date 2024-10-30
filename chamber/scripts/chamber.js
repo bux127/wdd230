@@ -83,10 +83,9 @@ async function getLinks() {
             `;
         cards.append(card);
         if (member.membershipLevel == 'Gold' || member.membershipLevel == 'Silver') {
-            ad.innerHTML =  Math.floor(Math.random(member.website))
+            ad.innerHTML =  Math.floor(Math.random(`${member.website}`));
         }
-        
-    });
+    })
 }
 
 getLinks();
