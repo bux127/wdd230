@@ -14,12 +14,11 @@ document.querySelectorAll('.nav_link').forEach(n => n.addEventListener('click', 
 
 
 
-window.onload = function() {
-    document.getElementById('loadtime').innerHTML = (new Date);
-}
+
 
 document.getElementById('date').innerHTML = new Date(document.lastModified);
 
+/*
 // 1️⃣ Initialize display element variable
 const visitsDisplay = document.querySelector(".visits");
 
@@ -41,3 +40,16 @@ numVisits++;
 localStorage.setItem("numVisits-ls", numVisits);
 
 // 💡A client can view the localStorage data using the Applications panel in the browsers's DevTools - check it out on any major site.
+
+*/
+const baseURL = "https://bux127.github.io/wdd230/";
+const linksURL = "https://bux127.github.io/wdd230/chamber/data/members.json";
+
+async function getLinks() {
+    const response = await fetch(linksURL);
+    const data = await response.json();
+    console.log(data);
+    displayMembers(data.members);
+  }
+  
+  getLinks();
