@@ -66,7 +66,7 @@ async function getLinks() {
             `;
         cards.append(card);
         if (member.membershipLevel == 'Gold' || member.membershipLevel == 'Silver') {
-            ad.innerHTML = card;
+            ad.innerHTML = 'great';
         }
     })
 }
